@@ -128,15 +128,15 @@ export default {
 
 
         // 체크박스를 체크하면 false값을 true로 바꾸기 위해서
-        const toggleTodo = async (index) => {
+        const toggleTodo = async (index, checked) => {
             // console.log(index);
             error.value='';
             const id=todos.value[index].id; //내가 선택하는 친구를 보였다 안보였다 하기 위해서
             try{
                 await axios.patch('http://localhost:3000/todos/' + id, {
-                    completed: !todos.value[index].completed
+                    completed: checked
                 });
-                todos.value[index].completed=!todos.value[index].completed; //true로 바꾸고 선 그어주기
+                todos.value[index].completed=checked //!todos.value[index].completed; //true로 바꾸고 선 그어주기
             }catch(err){
                 console.log(err)
                 error.value="체크되지 않았습니다."
