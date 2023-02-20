@@ -1,31 +1,6 @@
 {
   "todos": [
     {
-      "subject": "자바스크립트",
-      "completed": true,
-      "id": 49
-    },
-    {
-      "subject": "리액트",
-      "completed": false,
-      "id": 50
-    },
-    {
-      "subject": " 뷰",
-      "completed": false,
-      "id": 51
-    },
-    {
-      "subject": " 넥스트제이에스",
-      "completed": false,
-      "id": 52
-    },
-    {
-      "subject": " 노드제이에스",
-      "completed": false,
-      "id": 53
-    },
-    {
       "subject": " 제이쿼리",
       "completed": false,
       "id": 54
@@ -39,11 +14,6 @@
       "subject": " CSS",
       "completed": false,
       "id": 56
-    },
-    {
-      "subject": " Bootstrap",
-      "completed": false,
-      "id": 57
     },
     {
       "subject": " API",
@@ -105,18 +75,6 @@
       "id": 68
     },
     {
-      "subject": "가나ㅏ마라마",
-      "completed": false,
-      "body": "ㄴㅁㄹㄴㄻㄴ",
-      "id": 70
-    },
-    {
-      "subject": "안녕",
-      "completed": false,
-      "body": "오늘은 어쩌고",
-      "id": 71
-    },
-    {
       "subject": "ㄱㄴㄷㄷㄷㄷㅁㄼ",
       "completed": false,
       "body": "ㄱㅁㄹㄴㅁㄼ",
@@ -133,6 +91,36 @@
       "completed": false,
       "body": "ㅇㅁㄴㅇㅁㄴㅇㅁㄴ",
       "id": 74
+    },
+    {
+      "subject": "자바스크립트",
+      "completed": false,
+      "body": "",
+      "id": 75
+    },
+    {
+      "subject": "리액트",
+      "completed": false,
+      "body": "",
+      "id": 76
+    },
+    {
+      "subject": "vue",
+      "completed": false,
+      "body": "",
+      "id": 77
+    },
+    {
+      "subject": "HTML",
+      "completed": false,
+      "body": "",
+      "id": 78
+    },
+    {
+      "subject": "CSS",
+      "completed": true,
+      "body": "",
+      "id": 79
     }
   ]
 }

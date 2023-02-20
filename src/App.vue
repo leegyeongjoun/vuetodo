@@ -10,6 +10,7 @@
        </ul>
     </nav>
     <router-view/>
+ 
 </template>
 
 <script>
@@ -19,8 +20,11 @@
 </script>
 
 <style>
-    .navbar{border: 1px solid #ddd; widows: 100%; padding: 20px;}
+    .navbar{border: 1px solid #ddd; width: 100%; padding: 20px; background: black; color: white;}
     .navbar>ul{list-style-type: none; margin: 0 auto; max-width: 1024px; width: 100%; display: flex;}
 
-    .navbar ul li a{text-decoration: none; padding: 10px 20px; font-weight: bold; color: skyblue;}
+    .navbar ul li a{text-decoration: none; padding: 10px 20px; font-weight: bold; color: #aaa; font-weight: bold; transition: .3s;}
+    .navbar ul li a:hover{color: white;}
 </style>
+
+               

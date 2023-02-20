@@ -184,12 +184,12 @@ export default {
 <style>
     *{margin: 0; padding: 0; box-sizing: border-box;}
     .container{widows: 100%; max-width: 1024px; margin: 0 auto; padding: 0 20px;}
-    h2{text-align: center; color: skyblue; margin-bottom: 50px; margin-top: 50px;}
+    h2{text-align: center; color: black; margin-bottom: 50px; margin-top: 50px;}
     .d-flex{display: flex;}
     form{ margin-bottom: 50px}
     .flex-grow-1{flex-grow: 1;}
      .flex-grow-1 input{width: 98%; padding: 10px 20px;}
-    .btn{padding: 12px 30px; border: none; background: skyblue; color: #fff; transition: .3s;}
+    .btn{padding: 12px 30px; border: none; background: black; color: #fff; transition: .3s;}
     .btn:hover{background: blue;}
     .card{margin: 10px 0;}
     .card-body{border: 1px solid #111; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center;}
