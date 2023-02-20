@@ -1,8 +1,9 @@
 <template>
     <div class="container">
         <h2>TODO-LIST</h2>
+        <button class="btn btnB" @click="moveToCreatePage">CREAT TODO</button>
         <input type="text" placeholder="검색" class="form-control" v-model="searchText">
-        <TodoSimpleForm @add-todo="addTodo"/>
+        <!-- <TodoSimpleForm @add-todo="addTodo"/> -->
         <div style="textAlign:center" v-if="!todos.length">
             찾는 문장이 없습니다.
         </div>
@@ -27,18 +28,20 @@
 // v-model에 이름 작성 setup안에 todo 정의 import해오기 return에서 todo 다시 받기
 // @는 src가 기준
 import { ref, computed, watch } from 'vue';
-import TodoSimpleForm from '@/components/TodoSimpleForm.vue';
+// import TodoSimpleForm from '@/components/TodoSimpleForm.vue';
 import TodoList from '@/components/TodoList.vue';
 import '@fortawesome/fontawesome-free/js/all.js'
 import axios from 'axios';
+import { useRouter } from 'vue-router'
 
 export default {
     // 컴포넌트를 불러올 때
     components: {
-        TodoSimpleForm,
+        // TodoSimpleForm,
         TodoList
     },
     setup(){
+        const router = useRouter();
         // 배열구조로 todo를 가져옴 부모가 todo를 제어하고 있음
         // ref는 리액트 상태관리와 비슷 함
         const todos = ref([ ]);
@@ -65,6 +68,14 @@ export default {
             }
         };
         getTodos();
+
+        const moveToCreatePage = () => {
+            router.push({
+                name:'TodoCreate'
+            })
+        }
+         
+     
 
         //  const addTodo = (todo) => {
         //      /* todos.value.push(todo) */
@@ -162,7 +173,8 @@ export default {
             limit,
             numberofPages,
             currentPage,
-            numberOfTodos
+            numberOfTodos,
+            moveToCreatePage
             // todoStyle
         }
     }
@@ -190,4 +202,6 @@ export default {
     .page-item{padding: 10px; margin: 0 3px; border: 1px solid #ddd;}
     .page-link{color: #666; text-decoration: none;}
     .active{background: #666; color: #fff;}
+
+    .btnB{margin-bottom: 10px;}
 </style>
